@@ -1,7 +1,5 @@
 from django.shortcuts import render
- from django.shortcuts import HttpResponse
 
- def show_blog(request):
-
-     return HttpResponse(u'Hello World')
+ def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 
